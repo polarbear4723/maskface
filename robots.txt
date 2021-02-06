@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://mymaskface.netlify.app/sitemap.xml
