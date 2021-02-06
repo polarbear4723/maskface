@@ -1,0 +1,543 @@
+body {
+  font-family: "Jua", sans-serif;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: #35465d;
+}
+.file-upload {
+  padding: 15% 3%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 1.5px #f6f7fa;
+  background-color: #f6f7fa;
+}
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1fb264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824b;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1aa059;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+#loading {
+  display: none;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  object-fit: contain;
+  border-radius: 10px;
+  border: dashed 1.5px #35465d;
+  background-color: #ffffff;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #35465d82;
+  border: 1.5px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.file-upload-image {
+  max-height: 60%;
+  max-width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+.try-again-btn {
+  border-radius: 40px;
+  border: solid 1.5px #35465d;
+  background-color: #35465d;
+}
+
+.try-again-text {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 4px 15px;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+.navbar-light .navbar-brand {
+  line-height: 1.68;
+  text-align: left;
+  color: #35465d;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #ffffff;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.title {
+  line-height: 1.67;
+  text-align: center;
+  color: #35465d;
+}
+
+.subtitle {
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+
+.youtube-link {
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
+}
+
+.youtube-link:hover {
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
+}
+
+.youtube-icon {
+  width: 30px;
+  height: 27.262px;
+}
+
+.upload {
+  width: 20%;
+}
+
+.upload-text {
+  width: 58%;
+  font-size: 1.5rem;
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: initial;
+  color: initial;
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+#box-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #eba6be33;
+}
+#bar-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #eba6be;
+}
+#box-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fbb03b33;
+}
+#bar-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #fbb03b;
+}
+#box-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #75cc5433;
+}
+#bar-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #75cc54;
+}
+#box-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #1bafea33;
+}
+#bar-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #1bafea;
+}
+#box-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #31849b33;
+}
+#bar-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #31849b;
+}
+
+/* .블랙핑크-제니-box,
+.블랙핑크-지수-box,
+.블랙핑크-로제-box,
+.블랙핑크-리사-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ffd4f3;
+}
+.블랙핑크-제니-bar,
+.블랙핑크-지수-bar,
+.블랙핑크-로제-bar,
+.블랙핑크-리사-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #fba2c0;
+}
+.오마이걸-아린-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ffffcf;
+}
+.오마이걸-아린-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #efe59d;
+}
+.아이들-소연-box,
+.아이들-우기-box,
+.아이들-미연-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #d5ffff;
+}
+.아이들-소연-bar,
+.아이들-우기-bar,
+.아이들-미연-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #a2dbee;
+}
+.마마무-화사-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fffb74;
+}
+.마마무-화사-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #fac841;
+}
+.트와이스-사나-box,
+.트와이스-나연-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fff8c7;
+}
+.트와이스-사나-bar,
+.트와이스-나연-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #f8c596;
+} */
+.percent-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.mask-label {
+  width: 20%;
+  text-align: left;
+  height: 2rem;
+}
+#label-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.result-message {
+  font-size: 2rem;
+}
+
+.mask-explain {
+  font-size: 1.5rem;
+}
+/* .dinosaur-mask-title {
+  color: #3ba363;
+}
+.dinosaur-mask-celeb {
+  color: #3ba363;
+  font-size: 1.2rem;
+}
+.deer-mask-title {
+  color: #3ba363;
+}
+.deer-mask-celeb {
+  color: #3ba363;
+  font-size: 1.2rem;
+}
+.블랙핑크-제니-mask-title,
+.블랙핑크-지수-mask-title,
+.블랙핑크-로제-mask-title,
+.블랙핑크-리사-mask-title {
+  color: #fba2c0;
+}
+.블랙핑크-제니-mask-celeb,
+.블랙핑크-지수-mask-celeb,
+.블랙핑크-로제-mask-celeb,
+.블랙핑크-리사-mask-celeb {
+  color: #fba2c0;
+  font-size: 1.2rem;
+}
+.dog-mask-title {
+  color: #548dd4;
+}
+.dog-mask-celeb {
+  color: #548dd4;
+  font-size: 1.2rem;
+}
+.rabbit-mask-title {
+  color: #e56995;
+}
+.rabbit-mask-celeb {
+  color: #e56995;
+  font-size: 1.2rem;
+}
+.오마이걸-아린-mask-title {
+  color: #a2dbee;
+}
+.오마이걸-아린-mask-celeb {
+  color: #a2dbee;
+  font-size: 1.2rem;
+}
+.fox-mask-title {
+  color: #31849b;
+}
+.fox-mask-celeb {
+  color: #31849b;
+  font-size: 1.2rem;
+} */
+
+/* gender */
+input#gender {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 41px;
+  box-shadow: 0 0 0 8px #e5e9ea inset;
+  border-radius: 30px;
+  position: relative;
+}
+
+.knob {
+  position: absolute;
+  width: 41px;
+  top: 0;
+  left: 0;
+  height: 41px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #f470a7 inset;
+  background-color: #fbd4e6;
+  transition: 0.3s;
+}
+
+.knob > i {
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  top: 100%;
+  background-color: #f470a7;
+  left: calc(50% - 2px);
+}
+
+.knob > i:before,
+.knob > i:after {
+  width: 6px;
+  position: absolute;
+  top: 42%;
+  content: "";
+  height: 4px;
+  background-color: #f470a7;
+}
+
+.knob > i:before {
+  left: 4px;
+}
+.knob > i:after {
+  left: -6px;
+}
+
+input:checked + label > .knob {
+  box-shadow: 0 0 0 8px #a1c6dd inset;
+  background-color: #e2ecf4;
+  transform: translateX(49px) rotate(-140deg);
+}
+
+input:checked + label > .knob > i {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after,
+input:checked + label > .knob > i:before {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after {
+  top: 14.5px;
+  width: 12px;
+  left: -7px;
+  transform: rotate(45deg);
+}
+input:checked + label > .knob > i:before {
+  top: 13px;
+  width: 12px;
+  left: 0px;
+  transform: rotate(134deg);
+}
+
+.ad-banner {
+  max-width: 320px;
+}

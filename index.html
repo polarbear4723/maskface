@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>마스크 닮은꼴</title>
+    <meta name="title" content="마스크 닮은꼴">
+    <meta name="subject" content="인공지능으로 보는 마스크 쓴 나의 얼굴, 나와 닮은 연예인을 찾아보세요!">
+    <meta name="keywords" content="마스크 닮은꼴, 인공지능 마스크 닮은꼴, 마스크 쓴 나의 얼굴, 나와 닮은 연예인, 마스크 착샷, 얼굴로 보는 마스크 상, 마스크, maskface, 연예인, 인공지능 마스크 닮은꼴, AI 마스크">
+    <meta name="author" content="조코딩">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://maskface.site" />
+    <meta property="og:url" content="https://maskface.site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="마스크 닮은꼴" />
+    <meta property="og:description" content="마스크 쓴 나의 얼굴, 연예인 누구와 닮았을까? 인공지능으로 마스크 닮은꼴을 찾아보세요! 연예인 사진 빅 데이터로 학습한 인공지능이 나의 얼굴로 마스크 닮은꼴을 매칭해 드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 마스크 닮은꼴 한번 해보세요! 마스크 닮은꼴 테스트를 통해 나와 닮은 연예인 찾기를 할 수 있습니다."
+    />
+    <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-145482737-6');
+    </script>
+</head>
+
+<body>
+    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://maskface.site/">인공지능으로 알아보는 마스크 닮은꼴 연예인</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">마스크 닮은꼴
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+					<a class="nav-link" href="https://maskface.site/#comment-4886228709">댓글
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <h1 class="title">마스크 닮은꼴</h1>
+        <div class="img-container" align="center">
+			<!-- Block parent element -->
+            <img src="emoji_selfie4.png" alt="maskface" height="200" width="200">
+            <img src="emoji_selfie11.png" alt="maskface" height="200" width="200">
+		</div>
+        <h2 class="subtitle">마스크 쓴 나의 얼굴, 연예인 누구와 닮았을까?</h2>
+        <h2 class="sr-only">나는 어떤 연예인과 닮았을까? 나의 마스크 닮은꼴 찾기를 해보세요!</h2>
+        <h3 class="sr-only">대표 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 마스크 닮은꼴을 찾아드립니다.</h3>
+        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
+        <p class="sr-only">마스크 쓴 나의 얼굴, 연예인 누구와 닮았을까? 인공지능으로 마스크 닮은꼴을 찾아보세요! 연예인 사진 빅 데이터로 학습한 인공지능이 나의 얼굴로 마스크 닮은꼴을 매칭해 드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 마스크 닮은꼴 한번 해보세요! 마스크 닮은꼴 테스트를 통해 나와 닮은 연예인 찾기를 할 수 있습니다.</p>
+    </section>
+    <!-- <section class="youtube pb-3" id="yotube-mid-link">
+        <div class="container mt-3 youtube-cover d-flex flex-row-reverse align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '화면 중간'});">
+            <img src="img/youtube-copy.jpg" alt="youtube-icon" class="youtube-icon">
+            <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">By 조코딩 유튜브 채널</a>
+        </div>
+    </section> -->
+    <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
+    <section class="d-flex justify-content-center">
+        <p class="d-flex align-items-center pr-3">여자</p>
+        <div>
+            <input type="checkbox" id="gender">
+            <label for="gender">
+                <span class="knob">
+                    <i></i>
+                </span>
+            </label>
+        </div>
+        <p class="d-flex align-items-center pl-3">남자</p>
+    </section>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="upload.svg" class="mt-5 pt-5 upload">
+                <h3 class="mb-5 pb-5 pt-4  upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AI가 당신의 마스크 닮은꼴을 분석중입니다.</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around bd-highlight"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+                    <span class="try-again-text">다른 사진으로 재시도</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="coupang" class="container d-flex justify-content-center">
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({
+                "id": 141621,
+                "subId": null
+            });
+        </script>
+    </div> -->
+    <div class="mt-2 container d-flex justify-content-center ad-banner">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-1ibeto5pa83fn" data-ad-width="320" data-ad-height="100"></ins>
+    </div>
+    <div class="mt-2 container d-flex justify-content-center ad-banner">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit    = "DAN-1jefy9znk6ibb" 
+        data-ad-width   = "300" 
+        data-ad-height  = "250"></ins>
+    </div>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <section id="yotube-bottom-link" class="mt-2 d-flex flex-column justify-content-center align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '하단 광고'});">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/s6SITKSN9Q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4 class="mt-1">By 조코딩 유튜브 채널. Modified by 북극곰.</h4>
+    </section>
+    <div class="container pt-3">
+        <div id="disqus_thread"></div>
+    </div>
+    <footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p>&copy; polarbear4723 2021. All Rights Reserved. </p>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <ins class="kakao_ad_area" style="display:none;" 
+    data-ad-unit    = "DAN-t89oh3sc0ew5" 
+    data-ad-width   = "300" 
+    data-ad-height  = "250"></ins>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                        <span class="try-again-text">다른 사진으로 재시도</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function gaReload1() {
+            gtag('event', '다른 사진으로 재시도 1차', {
+                'event_category': '다른 사진으로 재시도'
+            });
+        }
+        function gaReload2() {
+            gtag('event', '다른 사진으로 재시도 2차', {
+                'event_category': '다른 사진으로 재시도'
+            });
+            window.location.reload();
+        }
+    </script>
+    <script>
+        (function() {
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://maskface.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                });
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+    <script type="text/javascript">
+        let URL;
+        const urlMale = "https://teachablemachine.withgoogle.com/models/DUC9Fzqbm/";
+        const urlFemale = "https://teachablemachine.withgoogle.com/models/VKO40kazU/";
+        let model, webcam, labelContainer, maxPredictions;
+        async function init() {
+            if (document.getElementById("gender").checked) {
+                URL = urlMale;
+            } else {
+                URL = urlFemale;
+            }
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) {
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
+        }
+        async function predict() {
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            console.log(prediction[0].className);
+            var resultTitle, resultExplain; //, resultCeleb;
+            if (document.getElementById("gender").checked) {
+                gtag('event', '마스크 닮은꼴 수행', {
+                    'event_category': '마스크 닮은꼴 수행',
+                    'event_label': '남자'
+                });
+                switch (prediction[0].className) {
+                    case "BTS-지민":
+                        resultTitle = "BTS 지민"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 BTS 지민', {'event_category': '남자 결과'});
+                        break;
+                    case "BTS-뷔":
+                        resultTitle = "BTS 뷔"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 BTS 뷔', {'event_category': '남자 결과'});
+                        break;
+                    case "아스트로-차은우":
+                        resultTitle = "아스트로 차은우"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 아스트로 차은우', {'event_category': '남자 결과'});
+                        break;
+                    case "BTS-정국":
+                        resultTitle = "BTS 정국"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 BTS 정국', {'event_category': '남자 결과'});
+                        break;
+                    case "BTS-진":
+                        resultTitle = "BTS 진"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 BTS 진', {'event_category': '남자 결과'});
+                        break;
+                    case "동방신기-유노윤호":
+                        resultTitle = "동방신기 유노윤호"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 동방신기 유노윤호', {'event_category': '남자 결과'});
+                        break;
+                    case "엑소-백현":
+                        resultTitle = "엑소 백현"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 엑소 백현', {'event_category': '남자 결과'});
+                        break;
+                    case "엑소-카이":
+                        resultTitle = "엑소 카이"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 엑소 카이', {'event_category': '남자 결과'});
+                        break;
+                    case "AB6IX-이대휘":
+                        resultTitle = "AB6IX 이대휘"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 AB6IX 이대휘', {'event_category': '남자 결과'});
+                        break;
+                    case "빅스-라비":
+                        resultTitle = "빅스 라비"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 빅스 라비', {'event_category': '남자 결과'});
+                        break;
+                    case "차은우":
+                        resultTitle = "차은우"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 차은우', {'event_category': '남자 결과'});
+                        break;
+                    case "김정현":
+                        resultTitle = "김정현"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 김정현', {'event_category': '남자 결과'});
+                        break;
+                    case "조병규":
+                        resultTitle = "조병규"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 조병규', {'event_category': '남자 결과'});
+                        break;
+                    case "엄기준":
+                        resultTitle = "엄기준"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 엄기준', {'event_category': '남자 결과'});
+                        break;
+                    case "김영대":
+                        resultTitle = "김영대"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 김영대', {'event_category': '남자 결과'});
+                        break;
+                    case "황인엽":
+                        resultTitle = "황인엽"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 황인엽', {'event_category': '남자 결과'});
+                        break;
+                    case "김명수":
+                        resultTitle = "김명수"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 김명수', {'event_category': '남자 결과'});
+                        break;
+                    case "임시완":
+                        resultTitle = "임시완"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 임시완', {'event_category': '남자 결과'});
+                        break;
+                    case "남궁민":
+                        resultTitle = "남궁민"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 남궁민', {'event_category': '남자 결과'});
+                        break;
+                    case "안보현":
+                        resultTitle = "안보현"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 안보현', {'event_category': '남자 결과'});
+                        break;
+                    case "고준":
+                        resultTitle = "고준"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 고준', {'event_category': '남자 결과'});
+                        break;
+                    case "강승윤":
+                        resultTitle = "강승윤"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 강승윤', {'event_category': '남자 결과'});
+                        break;
+                    case "황민현":
+                        resultTitle = "황민현"
+                        resultExplain = ""
+                        gtag('event', '남자 결과 황민현', {'event_category': '남자 결과'});
+                        break;        
+                        
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = ""
+                        // resultCeleb = ""
+                        resultExplain = ""
+                        gtag('event', '남자 결과 알수없음', {'event_category': '남자 결과'});
+                }
+            } else {
+                gtag('event', '마스크 닮은꼴 수행', {
+                    'event_category': '마스크 닮은꼴 수행',
+                    'event_label': '여자'
+                });
+                switch (prediction[0].className) {
+                    case "블랙핑크-제니":
+                        resultTitle = "블랙핑크 제니"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 블랙핑크 제니', {'event_category': '여자 결과'});
+                        break;
+                    case "오마이걸-아린":
+                        resultTitle = "오마이걸 아린"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 오마이걸 아린', {'event_category': '여자 결과'});
+                        break;
+                    case "블랙핑크-지수":
+                        resultTitle = "블랙핑크 지수"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 블랙핑크 지수', {'event_category': '여자 결과'});
+                        break;
+                    case "아이들-소연":
+                        resultTitle = "(여자)아이들 소연"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 (여자)아이들 소연', {'event_category': '여자 결과'});
+                        break;        
+                    case "아이들-우기":
+                        resultTitle = "(여자)아이들 우기"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 (여자)아이들 우기', {'event_category': '여자 결과'});
+                        break;        
+                    case "마마무-화사":
+                        resultTitle = "마마무 화사"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 마마무 화사', {'event_category': '여자 결과'});
+                        break;        
+                    case "블랙핑크-로제":
+                        resultTitle = "블랙핑크 로제"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 블랙핑크 로제', {'event_category': '여자 결과'});
+                        break;        
+                    case "블랙핑크-리사":
+                        resultTitle = "블랙핑크 리사"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 블랙핑크 리사', {'event_category': '여자 결과'});
+                        break;        
+                    case "트와이스-사나":
+                        resultTitle = "트와이스 사나"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 트와이스 사나', {'event_category': '여자 결과'});
+                        break;        
+                    case "트와이스-나연":
+                        resultTitle = "트와이스 나연"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 트와이스 나연', {'event_category': '여자 결과'});
+                        break;        
+                    case "에이프릴-나은":
+                        resultTitle = "에이프릴 나은"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 에이프릴 나은', {'event_category': '여자 결과'});
+                        break;        
+                    case "트와이스-모모":
+                        resultTitle = "트와이스 모모"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 트와이스 모모', {'event_category': '여자 결과'});
+                        break;        
+                    case "모모랜드-낸시":
+                        resultTitle = "모모랜드 낸시"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 모모랜드 낸시', {'event_category': '여자 결과'});
+                        break;        
+                    case "이달의소녀-츄":
+                        resultTitle = "이달의 소녀 츄"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 이달의 소녀 츄', {'event_category': '여자 결과'});
+                        break;        
+                    case "아이즈원-장원영":
+                        resultTitle = "아이즈원 장원영"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 아이즈원 장원영', {'event_category': '여자 결과'});
+                        break;        
+                    case "아이들-미연":
+                        resultTitle = "(여자)아이들 미연"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 (여자)아이들 미연', {'event_category': '여자 결과'});
+                        break;        
+                    case "김소연":
+                        resultTitle = "김소연"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 김소연', {'event_category': '여자 결과'});
+                        break;        
+                    case "이지아":
+                        resultTitle = "이지아"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 이지아', {'event_category': '여자 결과'});
+                        break;        
+                    case "신혜선":
+                        resultTitle = "신혜선"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 신혜선', {'event_category': '여자 결과'});
+                        break;        
+                    case "문가영":
+                        resultTitle = "문가영"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 문가영', {'event_category': '여자 결과'});
+                        break;        
+                    case "김세정":
+                        resultTitle = "김세정"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 김세정', {'event_category': '여자 결과'});
+                        break;        
+                    case "신세경":
+                        resultTitle = "신세경"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 신세경', {'event_category': '여자 결과'});
+                        break;        
+                    case "조여정":
+                        resultTitle = "조여정"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 조여정', {'event_category': '여자 결과'});
+                        break;        
+                    case "윤아":
+                        resultTitle = "윤아"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 윤아', {'event_category': '여자 결과'});
+                        break;        
+                    case "권나라":
+                        resultTitle = "권나라"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 권나라', {'event_category': '여자 결과'});
+                        break;        
+                    case "이청아":
+                        resultTitle = "이청아"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 이청아', {'event_category': '여자 결과'});
+                        break;        
+                    case "이채영":
+                        resultTitle = "이채영"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 이채영', {'event_category': '여자 결과'});
+                        break;        
+                    case "설인아":
+                        resultTitle = "설인아"
+                        resultExplain = ""
+                        gtag('event', '여자 결과 설인아', {'event_category': '여자 결과'});
+                        break;
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = ""
+                        // resultCeleb = ""
+                        resultExplain = ""
+                        gtag('event', '여자 결과 알수없음', {'event_category': '여자 결과'});
+                }
+            }
+            var title = "<div class='" + prediction[0].className + "-mask-title'>" + resultTitle + "</div>"
+            var explain = "<div class='mask-explain pt-2'>" + resultExplain + "</div>"
+            // var celeb = "<div class='" + prediction[0].className + "-mask-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+            $('.result-message').html(title + explain); // + celeb);
+            var barWidth;
+            for (let i = 0; i < maxPredictions; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "BTS-지민":
+                        labelTitle = "지민"
+                        break;
+                    case "BTS-뷔":
+                        labelTitle = "뷔"
+                        break;
+                    case "아스트로-차은우":
+                        labelTitle = "차은우"
+                        break;
+                    case "BTS-정국":
+                        labelTitle = "정국"
+                        break;
+                    case "BTS-진":
+                        labelTitle = "진"
+                        break;
+                    case "동방신기-유노윤호":
+                        labelTitle = "유노윤호"
+                        break;
+                    case "엑소-백현":
+                        labelTitle = "백현"
+                        break;
+                    case "엑소-카이":
+                        labelTitle = "카이"
+                        break;
+                    case "AB6IX-이대휘":
+                        labelTitle = "이대휘"
+                        break;
+                    case "빅스-라비":
+                        labelTitle = "라비"
+                        break;
+                    case "차은우":
+                        labelTitle = "차은우"
+                        break;
+                    case "김정현":
+                        labelTitle = "김정현"
+                        break;
+                    case "조병규":
+                        labelTitle = "조병규"
+                        break;
+                    case "엄기준":
+                        labelTitle = "엄기준"
+                        break;
+                    case "김영대":
+                        labelTitle = "김영대"
+                        break;
+                    case "황인엽":
+                        labelTitle = "황인엽"
+                        break;
+                    case "김명수":
+                        labelTitle = "김명수"
+                        break;
+                    case "임시완":
+                        labelTitle = "임시완"
+                        break;
+                    case "남궁민":
+                        labelTitle = "남궁민"
+                        break;
+                    case "안보현":
+                        labelTitle = "안보현"
+                        break;
+                    case "고준":
+                        labelTitle = "고준"
+                        break;
+                    case "강승윤":
+                        labelTitle = "강승윤"
+                        break;
+                    case "황민현":
+                        labelTitle = "황민현"
+                        break;
+                    case "블랙핑크-제니":
+                        labelTitle = "제니"
+                        break;
+                    case "오마이걸-아린":
+                        labelTitle = "아린"
+                        break;
+                    case "블랙핑크-지수":
+                        labelTitle = "지수"
+                        break;
+                    case "아이들-소연":
+                        labelTitle = "소연"
+                        break;        
+                    case "아이들-우기":
+                        labelTitle = "우기"
+                        break;        
+                    case "마마무-화사":
+                        labelTitle = "화사"
+                        break;        
+                    case "블랙핑크-로제":
+                        labelTitle = "로제"
+                        break;        
+                    case "블랙핑크-리사":
+                        labelTitle = "리사"
+                        break;        
+                    case "트와이스-사나":
+                        labelTitle = "사나"
+                        break;        
+                    case "트와이스-나연":
+                        labelTitle = "나연"
+                        break;        
+                    case "에이프릴-나은":
+                        labelTitle = "나은"
+                        break;        
+                    case "트와이스-모모":
+                        labelTitle = "모모"
+                        break;        
+                    case "모모랜드-낸시":
+                        labelTitle = "낸시"
+                        break;        
+                    case "이달의소녀-츄":
+                        labelTitle = "츄"
+                        break;        
+                    case "아이즈원-장원영":
+                        labelTitle = "장원영"
+                        break;        
+                    case "아이들-미연":
+                        labelTitle = "미연"
+                        break;        
+                    case "김소연":
+                        labelTitle = "김소연"
+                        break;        
+                    case "이지아":
+                        labelTitle = "이지아"
+                        break;        
+                    case "신혜선":
+                        labelTitle = "신혜선"
+                        break;        
+                    case "문가영":
+                        labelTitle = "문가영"
+                        break;        
+                    case "김세정":
+                        labelTitle = "김세정"
+                        break;        
+                    case "신세경":
+                        labelTitle = "신세경"
+                        break;        
+                    case "조여정":
+                        labelTitle = "조여정"
+                        break;        
+                    case "윤아":
+                        labelTitle = "윤아"
+                        break;        
+                    case "권나라":
+                        labelTitle = "권나라"
+                        break;        
+                    case "이청아":
+                        labelTitle = "이청아"
+                        break;        
+                    case "이채영":
+                        labelTitle = "이채영"
+                        break;        
+                    case "설인아":
+                        labelTitle = "설인아"
+                        break;
+                }
+                var label = "<div class='mask-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box' id='box-" +i+ "'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' id='bar-" +i+ "' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                if(i<5) {labelContainer.childNodes[i].innerHTML = label + bar;}
+            }
+        }
+    </script>
+    <script>
+        function iosApp() {
+            document.getElementById("coupang").style.display="none";
+            $("#coupang ins").hide();
+            document.getElementById("addThis").style.display="none";
+            document.getElementById("disqus_thread").style.display="none";
+            var kakao = document.getElementsByClassName("kakao_ad_area");
+            for (var i = 0; i < kakao.length; i++) {
+                if(kakao[i]) {
+                    kakao[i].style.display="none";
+                }
+            }
+            document.getElementById("yotube-top-link").style.display="none";
+            document.getElementById("yotube-mid-link").style.display="none";
+            document.getElementById("yotube-bottom-link").style.display="none";
+        }
+    </script>
+</body>
+<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+</html>
