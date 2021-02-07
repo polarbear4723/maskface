@@ -207,6 +207,10 @@ body {
 .bar-container {
   height: 2.7rem;
 }
+#resulttitle {
+  color: #eba6be;
+  /* font-size: 2rem; */
+}
 #box-0 {
   position: absolute;
   top: 0;
