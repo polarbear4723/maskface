@@ -146,6 +146,11 @@ body {
   color: #35465d;
 }
 
+.img-container > img {
+  height: 200px;
+  width: 200px;
+}
+
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
   html {
@@ -153,6 +158,10 @@ body {
   }
   .navbar-brand {
     font-size: 2rem;
+  }
+  .img-container > img {
+    height: 130px;
+    width: 130px;
   }
 }
 
