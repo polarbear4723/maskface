@@ -147,7 +147,7 @@ body {
 }
 
 .img-container > img {
-  height: 200px;
+  height: 338.4615px;
   width: 200px;
 }
 
@@ -160,7 +160,7 @@ body {
     font-size: 2rem;
   }
   .img-container > img {
-    height: 130px;
+    height: 220px;
     width: 130px;
   }
 }
